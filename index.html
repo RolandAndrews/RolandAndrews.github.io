@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roland Andrews – Research & Personal Site</title>
+    <meta
+      name="description"
+      content="Personal website of Roland Andrews. Research, publications, notes, and blog."
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark">RA</div>
+          <div class="brand-text">
+            <span class="brand-name">Roland Andrews</span>
+            <span class="brand-tagline">Researcher & Engineer</span>
+          </div>
+        </div>
+        <nav class="site-nav">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Research, notes, and ideas in one place.</h1>
+            <p>
+              This is a minimal starting point for my personal site – a place to
+              collect research projects, publications, and occasional blog
+              posts.
+            </p>
+            <div class="hero-actions">
+              <a href="#research" class="btn primary">View research</a>
+              <a href="#blog" class="btn secondary">Read the blog</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            This page is intentionally minimal so it’s easy to extend later.
+            Replace this text with a short bio: your background, current
+            position, and main research interests.
+          </p>
+          <p>
+            You can keep things simple: plain HTML and CSS, no build system.
+            Over time, you can add separate pages or sections as needed.
+          </p>
+        </div>
+      </section>
+
+      <section id="research" class="section section-alt">
+        <div class="container">
+          <h2>Research</h2>
+          <p>
+            A compact overview of your research directions, current projects,
+            and key publications can live here.
+          </p>
+          <ul class="card-list">
+            <li class="card">
+              <h3>Project title goes here</h3>
+              <p>
+                Short 1–2 sentence description of a project or research area.
+                Link out to papers, code, or slides when you’re ready.
+              </p>
+              <!-- Example link you can adapt later:
+              <a href="#" class="card-link">Read more →</a>
+              -->
+            </li>
+            <li class="card">
+              <h3>Another research topic</h3>
+              <p>
+                Use cards like these as placeholders for future content:
+                publications, datasets, or collaborations.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="blog" class="section">
+        <div class="container">
+          <h2>Blog</h2>
+          <p class="section-intro">
+            A simple blog-style area. When you’re ready, you can create one
+            HTML file per post and link them from this list.
+          </p>
+          <ul class="post-list">
+            <li class="post-card">
+              <h3>
+                <a href="posts/example-post.html">An example post title</a>
+              </h3>
+              <p class="post-meta">Draft · Replace with your first real post</p>
+              <p class="post-excerpt">
+                This is a placeholder summary. Use this space to briefly explain
+                what the post is about.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Add the best ways to reach you: email, institutional profile, or
+            social accounts. You can remove any items you don’t use.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="label">Email</span>
+              <span class="value">you@institution.edu</span>
+            </li>
+            <li>
+              <span class="label">GitHub</span>
+              <span class="value">github.com/your-username</span>
+            </li>
+            <li>
+              <span class="label">Scholar / Profile</span>
+              <span class="value">Add a link to Google Scholar or similar</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Roland Andrews</span>
+        <span class="footer-note">
+          Built as a minimal, static personal site. No JS framework, no build
+          step.
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      // Keep footer year up to date without adding complexity
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear().toString();
+      }
+    </script>
+  </body>
+</html>
+
+
